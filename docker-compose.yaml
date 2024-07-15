@@ -1,0 +1,16 @@
+services:
+  atcoder:
+    container_name: atcoder-golang
+    build:
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - type: volume
+        source: venv
+        target: /go/src/venv
+      - type: bind
+        source: ./src
+        target: /go/src
+
+volumes:
+  venv:
