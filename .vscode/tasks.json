@@ -1,0 +1,19 @@
+{
+    "tasks": [
+	{
+	    "label": "download",
+	    "type": "shell",
+	    "command": "bash ${workspaceFolder}/cmd/download.sh"
+	},
+    {
+        "label": "test",
+        "type": "shell",
+        "command": "oj t -d ${fileDirname}/tests -c 'go run ${file}'"
+    },
+    {
+        "label": "submit",
+        "type": "shell",
+        "command": "cd ${fileDirname} && acc submit main.go"
+    }
+    ]
+}

@@ -28,7 +28,11 @@
 					"editor.defaultFormatter": "golang.go",
 					"editor.formatOnSave": true
 				}
-			}
+			},
+			"extensions": [
+				"SanaAjani.taskrunnercode",
+				"golang.go"
+			]
 		}
 	}
 
